@@ -1,17 +1,46 @@
-<your secret here>      <<  Change this line. The secret must be placed in the first line
-
+814c5723c21e7e90a3eae36c8df3c513
 
 Kernel System Calls
 -------------------
-<Your Answer>
+I downloaded the project and connected it to git.
+Next i checked the processor compatibility using the command uname -m.
+After verifying the processor i downloaded a file from the appropriate link:
+wget https://alonitac.github.io/devopsthehardeay/linux_project/amd64.whatido
+After downloading the file i granted permission to it using the command
+sudo chmod 777 whatIdo
+following the permissions i executed the file using
+strace ./whatIdo
+it showed me what the program did from what i observed it created a new directory named 'welcometodevopsthehardway'
+after that i changed directory to the new folder and then used 'ls' which displayed goodluck
 
 
 Broken Symlink
 -------------------
-<Your Answer>
 
-
+The issue arises when the symbolic link latest-backup.obj is moved into the backups directory.
+When the symbolic link is moved, it doesn't retain its original functionality of
+pointing to the last generated backup file outside of the backups directory.
+Instead, it ends up pointing to a non-existent file path relative to its new location within backups.
+To fix this issue and ensure that latest-backup.obj always points to the correct latest backup file,
+ regardless of where it is accessed from, we should create the symbolic link with an absolute path.
 
 Binary Numbers
 --------------
-<Your Answer>
+A.
+111 --> 7
+100 --> 4
+10110 --> 22
+b.
+0 - 255 --> 256  number
+The available decimal range represented by an 8 bit binary number is from 0  to 255
+c.
+To represent numbers from -255 to 255 with a 9-bit binary number using Twos complement:
+use the MSB to indicate sign:
+0 for non-negative numbers 0-255
+1 for negative number -1 to -255
+d.
+To represent floating-point numbers using 8 bits:
+Use 4 bits for the integer part and 4 bits for the fractional part
+
+
+
