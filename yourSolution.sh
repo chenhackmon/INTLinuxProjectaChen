@@ -11,6 +11,6 @@ touch .secret
 chmod 600 .secret
 cd ..
 rm important.link
-bin/bash generateSecret.sh
+/bin/bash generateSecret.sh
 cd secretDir
 cat .secret
