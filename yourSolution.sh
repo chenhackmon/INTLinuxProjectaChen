@@ -1,5 +1,6 @@
 mkdir secretDir
 cd secretDir
+cd ..
 cd maliciousFiles
 rm someFileIsLinkingToMe.BeAware
 rm amIMaliciousOrNot.whoKnows
